@@ -12,4 +12,4 @@ readme = "README.md"
 [dependencies]
 r2d2 = "0.8"
 # redis_cluster_rs = "0.1.10"
-redis_cluster_rs = { git="https://github.com/chunhui2001/redis-cluster-rs.git" }
+redis_cluster_rs = { git="https://github.com/chunhui2001/redis-cluster-rs.git", rev="refs/tags/0.23.3" }
