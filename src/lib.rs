@@ -39,15 +39,15 @@ pub extern crate r2d2;
 pub extern crate redis_cluster_rs2;
 
 use r2d2::ManageConnection;
-use redis_cluster_rs::{
+use redis_cluster_rs2::{
     redis::{ConnectionInfo, ErrorKind, IntoConnectionInfo, RedisError},
     Builder, Connection,
 };
 use std::time::Duration;
 
-pub use redis_cluster_rs::redis::{Commands, ConnectionLike, RedisResult};
+pub use redis_cluster_rs2::redis::{Commands, ConnectionLike, RedisResult};
 
-/// An `r2d2::ConnectionManager` for `redis_cluster_rs::Client`.
+/// An `r2d2::ConnectionManager` for `redis_cluster_rs2::Client`.
 #[derive(Debug)]
 pub struct RedisClusterConnectionManager {
     nodes: Vec<ConnectionInfo>,
