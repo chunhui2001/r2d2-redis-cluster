@@ -36,7 +36,7 @@
 //! }
 //! ```
 pub extern crate r2d2;
-pub extern crate redis_cluster_rs;
+pub extern crate redis_cluster_rs2;
 
 use r2d2::ManageConnection;
 use redis_cluster_rs::{
